@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StylistPro.Feedback.Application\StylistPro.Feedback.Application.csproj" />
+    <ProjectReference Include="..\StylistPro.Feedback.Data\StylistPro.Feedback.Data.csproj" />
+    <ProjectReference Include="..\StylistPro.Feedback.Domain\StylistPro.Feedback.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

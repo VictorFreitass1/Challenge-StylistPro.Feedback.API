@@ -1,0 +1,6 @@
+@StylistPro.Feedback.API_HostAddress = http://localhost:5122
+
+GET {{StylistPro.Feedback.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
