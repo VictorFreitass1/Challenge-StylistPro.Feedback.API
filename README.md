@@ -16,6 +16,7 @@ Esta API foi desenvolvida utilizando uma arquitetura de microservices, seguindo 
 - **Application Layer (Camada de Aplicação)**: Contém a lógica de negócios de alto nível, coordenando operações entre a camada de domínio e a camada de apresentação.
 - **Domain Layer (Camada de Domínio)**: Define as entidades de domínio e as regras de negócios centrais.
 - **Infrastructure Layer (Camada de Infraestrutura)**: Lida com tecnologias externas, como o acesso ao banco de dados.
+- **Test Layer (Camada de Testes)**: Inclui testes unitários e de integração utilizando xUnit para garantir o comportamento correto da aplicação
 
 ## Funcionalidades
 
@@ -80,22 +81,21 @@ A arquitetura **StylistPro** adota os princípios da **Onion Architecture** para
 ### 5. **Onion Architecture**
    - Promove a separação em camadas e o princípio da inversão de dependências.
 
-## Implementações Recentes
-
-### Testes Unitários
-- Testes unitários foram implementados nas camadas `ApplicationService` e `Repository` para verificar o funcionamento correto e a integridade dos dados, aumentando a robustez e confiabilidade da API.
-
-### Práticas de Clean Code e SOLID
+## Práticas de Clean Code e SOLID
 - **Clean Code** foi aplicado para clareza, simplicidade e manutenção. Princípios **SOLID** foram seguidos para um código modular e coeso:
   - **SRP (Single Responsibility Principle)**: Cada classe tem uma única responsabilidade.
   - **OCP (Open/Closed Principle)**: Módulos são abertos para extensão e fechados para modificação.
   - **LSP (Liskov Substitution Principle)** e **ISP (Interface Segregation Principle)**: Classes e interfaces específicas para casos de uso.
   - **DIP (Dependency Inversion Principle)**: Inversão de dependências torna o sistema mais modular.
+ 
+## Testes Unitários
+- Testes unitários foram implementados nas camadas `ApplicationService` e `Repository` para verificar o funcionamento correto e a integridade dos dados, aumentando a robustez e confiabilidade da API.
 
 ## Tecnologias Utilizadas
 - **Oracle Database**: Utilizado para operações CRUD.
 - **ASP.NET Core**: Framework para desenvolvimento da API.
 - **OpenAPI/Swagger**: Documentação interativa da API.
+- **xUnit**: para testes automatizados
 
 ## Requisitos
 - **.NET SDK 8.0**
