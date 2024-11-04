@@ -81,12 +81,22 @@ A arquitetura **StylistPro** adota os princípios da **Onion Architecture** para
 ### 5. **Onion Architecture**
    - Promove a separação em camadas e o princípio da inversão de dependências.
 
-## Práticas de Clean Code e SOLID
-- **Clean Code** foi aplicado para clareza, simplicidade e manutenção. Princípios **SOLID** foram seguidos para um código modular e coeso:
-  - **SRP (Single Responsibility Principle)**: Cada classe tem uma única responsabilidade.
-  - **OCP (Open/Closed Principle)**: Módulos são abertos para extensão e fechados para modificação.
-  - **LSP (Liskov Substitution Principle)** e **ISP (Interface Segregation Principle)**: Classes e interfaces específicas para casos de uso.
-  - **DIP (Dependency Inversion Principle)**: Inversão de dependências torna o sistema mais modular.
+## Clean Code 
+
+- **Clean Code** é um conjunto de boas práticas e princípios para escrever códigos legíveis, simples, e fáceis de manter facilitando a manutenção e evolução do sistema. Alguns dos princípios básicos incluem:
+- **Nomes significativos**: Os nomes de variáveis, métodos, classes e outros elementos do código devem ser descritivos e deixar claro seu propósito.
+- **Funções pequenas e de única responsabilidade**: Funções devem ser curtas e fazer apenas uma coisa. Elas devem ser simples de entender e ter um único propósito.
+- **Remoção de código Morto**: Código não utilizado ou comentado deve ser removido para evitar confusão e manter o código limpo. 
+- **Tratamento de erros claro**: Exceções e validações ajudam a evitar comportamentos inesperados e facilitam a identificação de problemas.
+- **Evite Dependências Ocultas**: O código deve ser claro sobre quais dados ele precisa. Depender de variáveis globais ou de comportamentos que não são explícitos pode gerar bugs difíceis de identificar. 
+
+## SOLID
+  
+- **SRP (Single Responsibility Principle)**: Cada classe tem uma única responsabilidade.
+- **OCP (Open/Closed Principle)**: Módulos são abertos para extensão e fechados para modificação.
+- **LSP (Liskov Substitution Principle)**: Classe e interface específica para casos de uso.
+- **ISP (Dependency Inversion Principle)**: Princípio da segregação de interfaces.
+- **DIP (Dependency Inversion Principle)**: Inversão de dependências torna o sistema mais modular.
  
 ## Testes Unitários
 - Testes unitários foram implementados nas camadas `ApplicationService` e `Repository` para verificar o funcionamento correto e a integridade dos dados, aumentando a robustez e confiabilidade da API.
